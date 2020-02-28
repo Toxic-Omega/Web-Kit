@@ -16,8 +16,8 @@ def Menu():
                          
 \033[32m[ \033[31m1 \033[32m] Install Apache2 (Web Server)
 \033[32m[ \033[31m2 \033[32m] Install Ngrok (Port Forwarding)
-\033[32m[ \033[31m3 \033[32m] Stop Apache2
-\033[32m[ \033[31m4 \033[32m] Start Apache2 & Ngrok
+\033[32m[ \033[31m3 \033[32m] Start Apache2 & Ngrok
+\033[32m[ \033[31m4 \033[32m] Stop Apache2
 \033[32m[ \033[31m5 \033[32m] 
 \033[32m[ \033[31m6 \033[32m] 
 \033[32m[ \033[31m7 \033[32m] 
@@ -64,3 +64,20 @@ while loop:
         os.system("unzip ngrok-stable-linux-amd64.zip")
         os.system("sudo rm ngrok-stable-linux-amd64.zip")
 #------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
+    elif what == "3":
+        os.system("clear")
+        print("""\033[31m
+ ▄▀▀▄    ▄▀▀▄  ▄▀▀█▄▄▄▄  ▄▀▀█▄▄           ▄▀▀▄ █  ▄▀▀█▀▄    ▄▀▀▀█▀▀▄ 
+█   █    ▐  █ ▐  ▄▀   ▐ ▐ ▄▀   █         █  █ ▄▀ █   █  █  █    █  ▐ 
+▐  █        █   █▄▄▄▄▄    █▄▄▄▀          ▐  █▀▄  ▐   █  ▐  ▐   █     
+  █   ▄    █    █    ▌    █   █            █   █     █        █      
+   ▀▄▀ ▀▄ ▄▀   ▄▀▄▄▄▄    ▄▀▄▄▄▀          ▄▀   █   ▄▀▀▀▀▀▄   ▄▀       
+         ▀     █    ▐   █    ▐           █    ▐  █       █ █         
+               ▐        ▐                ▐       ▐       ▐ ▐         V1.0
+               
+                         \033[94mCoded By Toxic - Omega
+\033[31m
+""")
+        os.system("xterm -hold -e ./ngrok http 80 & xterm -hold -e python Apache_Status.py")
+    
