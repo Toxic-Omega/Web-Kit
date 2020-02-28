@@ -21,7 +21,8 @@ def Menu():
 \033[32m[ \033[31m5 \033[32m] 
 \033[32m[ \033[31m6 \033[32m] 
 \033[32m[ \033[31m7 \033[32m] 
-\033[32m[ \033[31m8 \033[32m]          
+\033[32m[ \033[31m8 \033[32m]   
+\033[31m       
 """)
 loop = True
 while loop:
@@ -40,12 +41,26 @@ while loop:
                ▐        ▐                ▐       ▐       ▐ ▐         V1.0
                
                          \033[94mCoded By Toxic - Omega
-                           
+\033[31m
 """)
         os.system("sudo apt-get install apache2")
 #------------------------------------------------------------------------------
     elif what == "1":
         os.system("clear")
-        print(" ")
-        time.sleep(4)
+        print("""\033[31m
+ ▄▀▀▄    ▄▀▀▄  ▄▀▀█▄▄▄▄  ▄▀▀█▄▄           ▄▀▀▄ █  ▄▀▀█▀▄    ▄▀▀▀█▀▀▄ 
+█   █    ▐  █ ▐  ▄▀   ▐ ▐ ▄▀   █         █  █ ▄▀ █   █  █  █    █  ▐ 
+▐  █        █   █▄▄▄▄▄    █▄▄▄▀          ▐  █▀▄  ▐   █  ▐  ▐   █     
+  █   ▄    █    █    ▌    █   █            █   █     █        █      
+   ▀▄▀ ▀▄ ▄▀   ▄▀▄▄▄▄    ▄▀▄▄▄▀          ▄▀   █   ▄▀▀▀▀▀▄   ▄▀       
+         ▀     █    ▐   █    ▐           █    ▐  █       █ █         
+               ▐        ▐                ▐       ▐       ▐ ▐         V1.0
+               
+                         \033[94mCoded By Toxic - Omega
+\033[31m
+""")
+        os.system("sudo apt-get install wget")
+        os.system("wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip")
+        os.system("unzip ngrok-stable-linux-amd64.zip")
+        os.system("sudo rm ngrok-stable-linux-amd64.zip")
 #------------------------------------------------------------------------------
