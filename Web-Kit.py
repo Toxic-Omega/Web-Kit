@@ -79,5 +79,5 @@ while loop:
                          \033[94mCoded By Toxic - Omega
 \033[31m
 """)
-        os.system("xterm -hold -e ./ngrok http -region us 80 & xterm -hold -e python Apache_Status.py")
+        os.system("xterm -hold -e ./ngrok http -region eu 80 & xterm -hold -e python Apache_Status.py")
     
