@@ -80,7 +80,7 @@ while loop:
 """)
         os.system("xterm -hold -e ./ngrok http -region eu 80 & xterm -hold -e python Apache_Status.py")
 #------------------------------------------------------------------------------
-    elif what == "3":
+    elif what == "4":
         os.system("clear")
         print("""\033[31m
  ▄▀▀▄    ▄▀▀▄  ▄▀▀█▄▄▄▄  ▄▀▀█▄▄           ▄▀▀▄ █  ▄▀▀█▀▄    ▄▀▀▀█▀▀▄ 
