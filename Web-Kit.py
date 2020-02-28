@@ -64,7 +64,6 @@ while loop:
         os.system("unzip ngrok-stable-linux-amd64.zip")
         os.system("sudo rm ngrok-stable-linux-amd64.zip")
 #------------------------------------------------------------------------------
-#------------------------------------------------------------------------------
     elif what == "3":
         os.system("clear")
         print("""\033[31m
@@ -80,4 +79,20 @@ while loop:
 \033[31m
 """)
         os.system("xterm -hold -e ./ngrok http -region eu 80 & xterm -hold -e python Apache_Status.py")
+#------------------------------------------------------------------------------
+    elif what == "3":
+        os.system("clear")
+        print("""\033[31m
+ ▄▀▀▄    ▄▀▀▄  ▄▀▀█▄▄▄▄  ▄▀▀█▄▄           ▄▀▀▄ █  ▄▀▀█▀▄    ▄▀▀▀█▀▀▄ 
+█   █    ▐  █ ▐  ▄▀   ▐ ▐ ▄▀   █         █  █ ▄▀ █   █  █  █    █  ▐ 
+▐  █        █   █▄▄▄▄▄    █▄▄▄▀          ▐  █▀▄  ▐   █  ▐  ▐   █     
+  █   ▄    █    █    ▌    █   █            █   █     █        █      
+   ▀▄▀ ▀▄ ▄▀   ▄▀▄▄▄▄    ▄▀▄▄▄▀          ▄▀   █   ▄▀▀▀▀▀▄   ▄▀       
+         ▀     █    ▐   █    ▐           █    ▐  █       █ █         
+               ▐        ▐                ▐       ▐       ▐ ▐         V1.0
+               
+                         \033[94mCoded By Toxic - Omega
+\033[31m
+""")
+        os.system("sudo service apache2 stop")
     
